@@ -1,0 +1,510 @@
+.jd_layout{
+      width: 100%;
+      max-width: 640px;
+      min-width: 320px;
+      margin: 0 auto;
+}
+.jd_layout .jd_header{
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+}
+.jd_layout .jd_header .jd_header_box{
+      width: 100%;
+      max-width: 640px;
+      min-width: 320px;
+      height: 40px;
+      line-height: 40px;
+      background-color: rgba(201,21,35,0);
+      margin: 0 auto;
+      position: relative;
+}
+.jd_layout .jd_header .jd_header_box .icon_logo{
+      position: absolute;
+      width: 60px;
+      height: 30px;
+      background-position: 0 -103px ;
+      left: 5px;
+      top: 5px;
+     
+}
+.jd_layout .jd_header .jd_header_box form{
+      padding-left: 70px;
+      padding-right: 50px;
+}
+.jd_layout .jd_header .jd_header_box form input{
+      width: 100%;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 15px;
+      padding-left: 30px;
+}
+.jd_layout .jd_header .jd_header_box form .icon_search{
+      background-position: -82px 0px ;
+      width: 22px;
+      height: 22px;
+      position: absolute;
+      left: 78px;
+      top: 13px;
+}
+.jd_layout .jd_header .jd_header_box .login{
+      position: absolute;
+      right: 10px;
+      height: 40px;
+      line-height: 40px;
+      top: 0;
+      color: #fff;
+}
+/*------------------------------------------------*/
+/*京东轮播图区域的布局*/
+.jd_banner{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.jd_banner ul:nth-child(1){
+     width: 1000%;
+     transform:translateX(-10%)
+}
+.jd_banner ul:nth-child(1) li{
+     width: 10%;
+     float: left;
+}
+.jd_banner ul:nth-child(1) li a{
+     width: 100%;
+     display: block;
+}
+.jd_banner ul:nth-child(1) li a img{
+    width: 100%;
+    display: block;
+}
+/*点盒子*/
+.jd_banner ul:nth-child(2){
+     position: absolute;
+     bottom: 10px;
+     left: 50%;
+     transform:translateX(-50%);
+}
+.jd_banner ul:nth-child(2) li{
+     width: 8px;
+     height: 8px;
+     border: 1px solid #fff;
+     border-radius: 50%;
+     float: left;
+     margin-left: 10px;
+}
+.jd_banner ul:nth-child(2) li.active{
+     background: #fff;
+}
+.jd_banner ul:nth-child(2) li:nth-child(1){
+     margin-left: 0;
+}
+/*京东导航区域*/
+.jd_nav{
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.jd_nav ul{
+     width: 100%;
+     overflow: hidden;
+     margin-bottom: 10px;
+}
+.jd_nav ul li{
+     width: 25%;
+     float: left;
+     margin-top: 10px;
+}
+.jd_nav ul li a{
+     width: 40px;
+     height: 40px;
+     display: block;
+     margin: 0 auto;
+}
+.jd_nav ul li a img{
+     width: 100%;
+     display: block;
+}
+.jd_nav ul li p{
+    text-align: center;
+}
+/*京东秒杀区域*/
+/*title 部分*/
+.jd_sk{
+
+}
+.jd_sk .jd_sk_title{
+     height: 33px;
+     line-height: 33px;
+     border-bottom: 1px solid #ccc;
+     position: relative;
+}
+.jd_sk .jd_sk_title .jd_title_left{
+     float: left;
+     padding-left: 30px;
+}
+.jd_sk .jd_sk_title .jd_title_left .clock{
+     background: url("../images/seckill-icon.png");
+     background-size: 20px 25px;
+     width: 20px;
+     height: 25px;
+     position: absolute;
+     left: 5px;
+     top: 4px;
+}
+.jd_sk .jd_sk_title .jd_title_left .sk_text{
+     color: #e92322;
+     font-weight: bold;
+     margin-left: 10px;
+     margin-right: 10px;
+}
+.jd_sk .jd_sk_title .jd_title_left .timeInfo span{
+     background: #000;
+     color: #fff;
+}
+.jd_sk .jd_sk_title .jd_title_left .timeInfo span:nth-child(3n){
+    background: #fff;
+    color: #333;
+}
+.jd_sk .jd_sk_title .jd_title_right{
+        float: right;
+        padding-right: 20px;
+}
+.jd_sk .jd_sk_title .jd_title_right .icon_more{
+        position: absolute;
+        right: 3px;
+        width: 10px;
+        height: 20px;
+        top: 8px;
+        background-position: -186px -49px;
+}
+/*content 部分*/
+.jd_sk .jd_sk_conn{
+
+}
+.jd_sk .jd_sk_conn ul{
+     overflow: hidden;
+     padding: 10px;
+     border-bottom: 1px solid #ccc;
+}
+.jd_sk .jd_sk_conn ul li{
+     width: 33.333%;
+     float: left;
+}
+.jd_sk .jd_sk_conn ul li a{
+     width: 70%;
+     display: block;
+     margin: 0 auto;
+}
+.jd_sk .jd_sk_conn ul li a img{
+     display: block;
+     width: 100%;
+}
+.jd_sk .jd_sk_conn ul li p{
+     text-align: center;
+}
+.jd_sk .jd_sk_conn ul li p:nth-of-type(1){
+     margin: 5px 0;
+     text-decoration: line-through;
+}
+.jd_sk .jd_sk_conn ul li p:nth-of-type(2){
+     color: red;
+}
+/*京东广告区域*/
+.jd_major{
+     position: relative;
+}
+.jd_major img{
+     width: 100%;
+     display: block;
+}
+.jd_major ul{
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+}
+.jd_major ul li{
+     width: 50%;
+     float: left;
+}
+.jd_major ul li a img{
+     display: block;
+}
+/*京东商品图区域.*/
+.jd_shop .three{
+}
+.jd_shop .three li{
+     width: 33.333%;
+     float: left;
+}
+.jd_shop .two li{
+    width: 50%;
+    float: left;
+}
+.jd_shop ul li a{
+    display: block;
+    width: 100%;
+}
+.jd_shop ul li a img{
+    display: block;
+    width: 100%;
+}
+/*广告区域2*/
+.jd_major2 img{
+      width: 100%;
+      display: block;
+}
+/*品牌推荐*/
+.jd_brand{
+
+}
+.jd_brand h4{
+     height: 40px;
+     line-height: 40px;
+     padding-left: 10px;
+     color: #e92322;
+     font-size: 16px;
+     font-weight: bold;
+}
+.jd_brand ul li:nth-child(1){
+     width: 40%;
+     float: left;
+}
+.jd_brand ul li:nth-last-child(-n+2){
+     width: 30%;
+     float: left;
+}
+.jd_brand ul li a{
+     display: block;
+     width: 100%;
+}
+.jd_brand ul li a img{
+    display: block;
+    width: 100%;
+}
+/*广告区域3*/
+.jd_major3 img{
+     width: 100%;
+}
+/*猜你喜欢*/
+.jd_guess{
+
+}
+/*标题*/
+.jd_guess .jd_guess_title{
+     overflow: hidden;
+}
+.jd_guess_title_top{
+        height: 40px;
+        line-height: 40px;
+    overflow: hidden;
+}
+.jd_guess .jd_guess_title h4{
+       height: 40px;
+       line-height: 40px;
+       padding-left: 10px;
+       font-weight: bold;
+       float: left;
+       font-size: 16px;
+       color: #333333;
+}
+.jd_guess .jd_guess_title .login{
+       height: 40px;
+       line-height: 40px;
+       float: right;
+       padding-right: 30px;
+       color: #f15353;
+       font-size: 12px;
+       position: relative;
+       padding: 0px 20px 0px 20px;
+}
+.jd_guess .jd_guess_title .login::before{
+       position: absolute;
+       left: 0px;
+       top: 11px;
+       background: url("../images/icon-login.png");
+       background-size: 18px 18px;
+       width: 18px;
+       height: 18px;
+       content: "";
+}
+.jd_guess .jd_guess_title .login::after{
+        position: absolute;
+        right: 13px;
+        top: 16px;
+        background: url("../images/icon-right.png");
+        background-size: 4px 7px;
+        width: 4px;
+        height: 7px;
+        content: "";
+}
+/*猜你喜欢购物项*/
+.jd_guess .items{
+
+}
+
+.jd_guess .items .item{
+     width: 50%;
+     float: left;
+     padding: 10px 12px;
+     margin: 10px 0px;
+}
+.jd_guess .items .item>a{
+     display: block;
+     width: 100%;
+     border-bottom: 1px solid #ccc;
+     padding: 10px 0px;
+}
+.jd_guess .items .item a img{
+    display: block;
+    width: 100%;
+}
+.jd_guess .items .item a p{
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+    font-size: 13px;
+    /*强制换行.*/
+    word-break: break-all;
+    /*让文字超出之后出现省略号*/
+    text-overflow: ellipsis;
+    /*display:flex 伸缩盒子的旧语法*/
+    display: -webkit-box;
+    /*让文字竖着排,类似于flex-direction*/
+    -webkit-box-orient: vertical;
+    /*出现两行*/
+    -webkit-line-clamp:2;
+}
+.jd_guess .items .item .price{
+     float: left;
+     width: 100%;
+     margin-top: 10px;
+     color: #f15353;
+
+}
+.jd_guess .items .item .price a{
+    float: right;
+    border: 1px solid #ccc;
+    padding: 2px 8px;
+    font-size: 12px;
+    border-radius: 2px;
+}
+/*点击加载更多*/
+.jd_loading{
+     height: 33px;
+     line-height: 33px;
+     text-align: center;
+     border-top: 1px solid #ccc;
+     border-bottom: 1px solid #ccc;
+     font-size: 13px;
+     background: #f5f5f5;
+}
+/*底部*/
+.jd_footer{
+     padding-bottom: 44px;
+}
+.jd_footer .extra{
+    text-align: center;
+    height: 33px;
+    line-height: 33px;
+    font-size: 0;
+    padding: 5px 0px;
+    border-bottom: 1px solid #ccc;
+}
+.jd_footer .extra a{
+    width: 75px;
+    line-height: 1;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    display: inline-block;
+}
+.jd_footer .extra a:last-child{
+    border-right: none;
+}
+/*设备*/
+
+.jd_footer .device{
+     overflow: hidden;
+     padding: 10px 0;
+     border-bottom: 1px solid #ccc;
+     background: #f5f5f5;
+}
+.jd_footer .device li{
+     width: 33.333%;
+     float: left;
+     text-align: center;
+}
+.jd_footer .device li a{
+    width: 45px;
+    margin: auto;
+    color: #848689;
+    font-size: 12px;
+    position: relative;
+    display: block;
+}
+.jd_footer .device li:nth-child(1) a::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-image: url(../images/jd-sprites.png);
+    background-size: 200px 200px;
+    background-position: -115px -65px;
+}
+.jd_footer .device li:nth-child(2) a::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-image: url(../images/jd-sprites.png);
+    background-size: 200px 200px;
+    background-position: -35px -65px;
+}
+.jd_footer .device li:nth-child(3) a::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-image: url(../images/jd-sprites.png);
+    background-size: 200px 200px;
+    background-position: -75px -65px;
+}
+
+.jd_footer .copyright{
+     height: 40px;
+     line-height: 40px;
+     text-align: center;
+     color: #333;
+     background: #f5f5f5;
+     font-size: 12px;
+}
+
+/*底部通栏设计*/
+.toolbar{
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     height: 44px;
+}
+.toolbar ul{
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+    display: flex;
+}
+.toolbar ul li{
+    flex: 1;
+}
+.toolbar ul li a{
+    display: block;
+    margin: auto;
+}
+.toolbar ul li a img{
+    display: block;
+    height: 44px;
+    width: auto;
+}
+
+
